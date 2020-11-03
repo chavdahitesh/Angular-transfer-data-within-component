@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
+## ABOUT THIS DEMO
+This demo covered all types of data transfer from component to component
+
+:- Parent to Child Component: via Input
+
+:- Child to Parent Component: via Output() and EventEmitter
+
+:- Child to Parent Component: via ViewChild
+
+:- Unrelated Components: via a Service
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
