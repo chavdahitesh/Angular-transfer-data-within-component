@@ -1,0 +1,38 @@
+<div class="layout-content-body">
+  <div class="title-bar">
+    <h1 class="titlt-bar-title">
+      <span class="d-id">
+        Order List
+      </span>
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-filter [text]="buttonText" (searchValue)="onFilterValue($event)"></app-filter>
+    </div>
+  </div>
+  <div class="row gutter-xs">
+    <div class="col-xs-12">
+      <div class="card">
+        <div class="card-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of tableDta">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.email}}</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

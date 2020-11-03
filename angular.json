@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo-transfer-data"
+    }
+  },
+  "defaultProject": "demo-transfer-data",
+  "cli": {
+    "analytics": false
+  }
 }

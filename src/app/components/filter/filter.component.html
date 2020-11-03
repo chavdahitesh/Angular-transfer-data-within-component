@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-sm-10">
+        <form (ngSubmit)="onSubmit()">
+            <div class="row gutter-xs">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="input-with-icon">
+                            <input class="form-controll" [(ngModel)]="filterValue" type="text" name="name" id="searchString" placeholder="Search by Name">
+                            <span class="icon icon-search input-icon">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <button type="submit" id='btnApply' class="btn btn-primary form-control pull-right" [disabled]="">
+                        {{text}}
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
